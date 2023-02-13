@@ -13,7 +13,6 @@ st.header("Sales-Data")
 # convert dataframe 'Year' to datetime format
 df['Year'] = pd.to_datetime(df['Year'], format='%Y')
 df = df.set_index('Year')
-df.index = df.index.strftime('%Y')
 
 # showing dataframe
 st.write("Data Table:")
